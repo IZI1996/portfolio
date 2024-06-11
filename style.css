@@ -2,33 +2,50 @@
 
 *,
 *::before,
-*::after{
+*::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     font-family: 'Poppins', sans-serif;
     font-size: 10px;
 }
-body{
+
+body {
+
     width: 100%;
+    background: url('images/body.jpg') no-repeat center center/cover;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #fff;
+
 }
-p{
+
+p {
     font-size: 1.6rem;
-    color :var(--grayish-violet);
+    color: var(--grayish-violet);
     line-height: 1.6;
 }
-section{
+
+section {
     padding: 5rem 0;
 }
-.container{
+
+.container {
     width: 100%;
     max-width: 120rem;
     margin: 0 auto;
     padding: 0 2.5rem;
 }
-:root{
+
+:root {
     --cyan: #0678b4;
     --text-color: #0ba7fc;
     --gray: hsl(0, 0%, 75%);
@@ -38,6 +55,7 @@ section{
     --very-dark-violet: hsl(260, 8%, 14%);
     --white: #fff;
 }
+
 /* UTILITY CLASSES */
 .u-mb-small {
     margin-bottom: 1.6rem;
@@ -55,46 +73,54 @@ section{
 /************** HEADER SECTION ***************/
 /************** HEADER SECTION ***************/
 /************** HEADER SECTION ***************/
-header{
+header {
     width: 100%;
     height: 7.5rem;
     padding: 2.5rem;
 }
-.logo{
+
+.logo {
     height: 3.5rem;
     margin-right: 3rem;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.nav-ul{
+
+.nav-ul {
     display: flex;
     flex-grow: 1;
 }
+
 .nav-ul li {
     list-style: none;
     padding: 0 .5rem;
 }
+
 .nav-ul li a,
-.login a:first-child{
-  font-size: 1.3rem; 
-  text-decoration:none;
-  color: var(--dark);
+.login a:first-child {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: var(--dark);
 }
-.login a:first-child{
+
+.login a:first-child {
     margin-right: 1.5rem;
 }
+
 .nav-ul li a:hover,
-.login a:hover:first-child
-{
-color: (var(--cyan));
+.login a:hover:first-child {
+    color: (var(--cyan));
 }
-.u-login{
+
+.u-login {
     display: none;
 }
-.btn{
+
+.btn {
     font-size: 1.4rem;
     font-weight: 500;
     text-decoration: none;
@@ -105,7 +131,8 @@ color: (var(--cyan));
     opacity: 1;
     transition: all .3s;
 }
-.btn:hover{
+
+.btn:hover {
     opacity: .8;
 }
 
@@ -113,90 +140,99 @@ color: (var(--cyan));
 /************** INTRO SECTION  ***************/
 /************** INTRO SECTION  ***************/
 /************** INTRO SECTION  ***************/
-.intro-section{
+.intro-section {
     overflow: hidden;
 }
-.intro{
+
+.intro {
     display: flex;
     justify-content: space-between;
 }
-.intro-text{
+
+.intro-text {
     width: 45%;
     display: flex;
     flex-direction: column;
-    justify-content:center ;
+    justify-content: center;
     align-items: flex-start;
-}
-
-.intro-text h1{
-    font-size: 4.5rem;
-    line-height: 4.5rem;
-
-}
-
- 
-.intro-text span{
-    
-    color: var(--text-color);
-    font-size: 4.5rem;
-    line-height: 4.5rem;
- 
-}
-
-
-.btn-large{
-    font-size:1.6rem;
-    font-weight: 700;
-    padding: 1.2rem 3.5rem;
-}
-.btn-large:hover{
-    box-shadow: 0 0 5px ;
-
-}
-.intro-image{
-    width: 45%;
-    justify-content: right;
-}
-.intro-ics a{
-  display: inline-flex;
-  font-size: 20px;
-  justify-content: center;
-  background-color: transparent;
-  color: var(--text-color);
-  margin: 1.6rem 0.8rem ;
-  text-decoration: none;
-  align-items: center;
-  border: solid 2px #0678b4;
-  border-radius: 50%;
-  font-size: 20px;
-  padding: 0.4rem;
-}
-
-
-
-/************** ABOUT SECTION  ***************/
-/************** ABOUT SECTION  ***************/
-/************** ABOUT SECTION  ***************/
-
-.about{
-display: flex;
-justify-content: space-between;
-
-}
-.about-text {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
     text-align: start;
 
 }
 
-.about-img{
-    width: 45%;
-    
+.intro-text h1 {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+
 }
-.btn-large{
+
+
+.intro-text span {
+
+    color: var(--text-color);
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+
+}
+
+
+.btn-large {
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 1.2rem 3.5rem;
+}
+
+.btn-large:hover {
+    box-shadow: 0 0 5px;
+
+}
+
+.intro-image {
+    width: 45%;
+    justify-content: right;
+}
+
+.intro-ics a {
+    display: inline-flex;
+    font-size: 20px;
+    justify-content: center;
+    background-color: transparent;
+    color: var(--text-color);
+    margin: 1.6rem 0.8rem;
+    text-decoration: none;
+    align-items: center;
+    border: solid 2px #0678b4;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 0.4rem;
+}
+
+
+
+/************** ABOUT SECTION  ***************/
+/************** ABOUT SECTION  ***************/
+/************** ABOUT SECTION  ***************/
+
+.about {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.about-text {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+
+}
+
+.about-img {
+    width: 45%;
+
+}
+
+.btn-large {
     align-items: self-start;
 }
 
@@ -207,57 +243,66 @@ justify-content: space-between;
 /************** MEDIA QUERIES ***************/
 /************** MEDIA QUERIES ***************/
 /* TABLET SIZED DEVICES*/
-@media screen and  (max-width:985px) {
+@media screen and (max-width:985px) {
+
     /*INTRO SECTION*/
-    .intro-text{
+    .intro-text {
         width: 50%;
     }
-    .intro-text h1{
+
+    .intro-text h1 {
         font-size: 4.5rem;
         line-height: 4.5rem;
     }
 }
 
 /* MOBILE RESPONSIVE QUERIES */
-@media screen and  (max-width:730px) {
-    header{
+@media screen and (max-width:730px) {
+    header {
         height: 9rem;
     }
-    .logo{
+
+    .logo {
         margin: 0;
     }
+
     .login,
-    .btn{
-        display:none;
+    .btn {
+        display: none;
     }
-    nav{
+
+    nav {
         display: block;
         text-align: center;
     }
-    .nav-ul{
+
+    .nav-ul {
         justify-content: center;
     }
-    .u-login{
+
+    .u-login {
         display: inline;
     }
-    .intro{
+
+    .intro {
         flex-direction: column-reverse;
-        
+
     }
-    .intro-image{
+
+    .intro-image {
         padding-bottom: 4rem;
     }
-    .intro-text{
-       display: block;
-       width: 100%;
-       text-align: center;
-       padding: 4rem 0; 
+
+    .intro-text {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 4rem 0;
     }
-  
+
 }
 
 
 /************** INSECTION MAIN ***************/
 /************** SECTION MAIN ***************/
 /************** SECTION MAIN ***************/
-
