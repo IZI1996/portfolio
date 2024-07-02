@@ -16,7 +16,7 @@ html {
 body {
 
     width: 100%;
-    background: url('images/body.jpg') no-repeat center center/cover;
+    /* background: url('images/body.jpg') no-repeat center center/cover;
     border-radius: 15px;
     padding: 20px;
     text-align: center;
@@ -24,7 +24,7 @@ body {
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: #fff;
+    color: #fff; */
 
 }
 
@@ -35,14 +35,13 @@ p {
 }
 
 section {
-    padding: 5rem 0;
+    padding: 2rem 0 0 0;
 }
 
 .container {
     width: 100%;
-    max-width: 120rem;
     margin: 0 auto;
-    padding: 0 2.5rem;
+    padding: 0 21.5rem;
 }
 
 :root {
@@ -75,7 +74,7 @@ section {
 /************** HEADER SECTION ***************/
 header {
     width: 100%;
-    height: 7.5rem;
+    height: 8.5rem;
     padding: 2.5rem;
 }
 
@@ -102,9 +101,9 @@ nav {
 
 .nav-ul li a,
 .login a:first-child {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     text-decoration: none;
-    color: var(--dark);
+    color: var(--very-dark-blue);
 }
 
 .login a:first-child {
@@ -113,7 +112,7 @@ nav {
 
 .nav-ul li a:hover,
 .login a:hover:first-child {
-    color: (var(--cyan));
+    color: (var(--very-dark-blue));
 }
 
 .u-login {
@@ -159,10 +158,19 @@ nav {
 
 }
 
+.intro-text .u-mb-medium {
+    font-size: 2rem;
+}
+
 .intro-text h1 {
     font-size: 4.5rem;
     line-height: 4.5rem;
+    color: var(--very-dark-blue);
 
+}
+
+.intro-text h3 {
+    color: var(--very-dark-blue);
 }
 
 
@@ -189,6 +197,10 @@ nav {
 .intro-image {
     width: 45%;
     justify-content: right;
+}
+
+.intro-image img {
+    width: 100%;
 }
 
 .intro-ics a {
@@ -227,9 +239,23 @@ nav {
 
 }
 
+.about-text .u-mb-medium {
+    font-size: 2rem;
+}
+
+.about-text h1,
+h2,
+h4 {
+    color: var(--very-dark-blue);
+}
+
 .about-img {
     width: 45%;
 
+}
+
+.about-img img {
+    width: 100%;
 }
 
 .btn-large {
@@ -237,11 +263,109 @@ nav {
 }
 
 
+/************** SKILLS SECTIONS ***************/
+/************** SKILLS SECTIONS ***************/
+/************** SKILLS SECTIONS ***************/
+.sub-title {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+    padding-top: 30px;
+}
+
+.sub-title span {
+    color: var(--text-color);
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container1 {
+    width: 600px;
+    height: 500px;
+    padding: 0px 90px;
+    margin-left: 120px;
+}
+
+.heading {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+
+.bar {
+    font-size: 23px;
+}
+
+.technical-bars .bar {
+    margin: 10px 0;
+}
+
+.technical-bars .bar:first-child {
+    margin-top: 0;
+}
+
+.technical-bars .bar:last-child {
+    margin-bottom: 0;
+}
+
+.technical-bars .bar .info {
+    margin-bottom: 5px;
+}
+
+.technical-bars .bar .info span {
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+}
+
+.technical-bars .bar .progress-line {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.progress-line span {
+    height: 100%;
+    background-color: var(--text-color);
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    /* example of combining transform properties */
+    transform-origin: left;
+}
+
+.progress-line.html span {
+    width: 90%;
+}
+
+.progress-line.css span {
+    width: 40%;
+}
+
+/************** MEDIA QUERIES ***************/
+/************** MEDIA QUERIES ***************/
+/************** MEDIA QUERIES ***************/
 
 
-/************** MEDIA QUERIES ***************/
-/************** MEDIA QUERIES ***************/
-/************** MEDIA QUERIES ***************/
+
 /* TABLET SIZED DEVICES*/
 @media screen and (max-width:985px) {
 
@@ -306,3 +430,101 @@ nav {
 /************** INSECTION MAIN ***************/
 /************** SECTION MAIN ***************/
 /************** SECTION MAIN ***************/
+
+
+/************** PROJECTS SECTION ***************/
+.projects-section {
+    padding: 2rem 0;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-items {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.project-item {
+    width: 30%;
+    margin: 10px 10px 10px 10px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+}
+
+.project-img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-info {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.project-info h3 {
+    margin-bottom: 1.5rem;
+    color: var(--very-dark-blue);
+}
+
+.btn-github {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: var(--cyan);
+    padding: 1rem 2rem;
+    color: var(--white);
+    border-radius: 5rem;
+    transition: all 0.3s;
+}
+
+.btn-github:hover {
+    opacity: 0.8;
+}
+
+.project-preview {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 2rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.project-preview iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+    position: absolute;
+    top: -30px;
+    font-size: 20px;
+    background-color: var(--cyan);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.close-btn:hover {
+    background-color: var(--dark-grey);
+    color: var(--cyan);
+}
